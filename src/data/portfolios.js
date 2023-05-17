@@ -53,7 +53,7 @@ export const portfolios = [
         category: "Web Design",
         title: "My Portfolio",
         image: portfolio,
-        link1: "",
+        link1: "https://github.com/chinnarut/portfolio",
         link2: "https://chinnarut-porfoliot-web.vercel.app/",
         icon1: git,
         icon2: eye,
