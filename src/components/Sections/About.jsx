@@ -3,13 +3,13 @@ import styled from 'styled-components'
 import { useTheme } from '../../context/themeContext';
 import Title from '../Title/Title';
 import { SectionLayout } from '../../styles/Layouts';
-import about from "../../img/about.jpg";
 import Button from "../Button/Button";
-import { css, email, html, js, node, py, react } from "../../utils/Icons";
+import { css, email, mobile, html, js, node, py, react } from "../../utils/Icons";
 import Progressbar from '../Progressbar/Progressbar';
 import Stats from '../stats/Stats';
 import shape1 from "../../img/shape1.png";
 import shape2 from "../../img/shape2.png";
+import way from "../../img/chinnarut.png";
 
 const AboutStyled = styled(SectionLayout)`
   background-color: ${props => props.theme.aboutBg};
@@ -44,6 +44,7 @@ const AboutStyled = styled(SectionLayout)`
 
       img {
         width: 100%;
+        height: 90%;
       }
     }
 
@@ -56,6 +57,9 @@ const AboutStyled = styled(SectionLayout)`
       }
 
       .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
         margin-top: 2rem;
         @media screen and (max-width: 1150px) {
           margin-bottom: 2rem;
@@ -90,12 +94,12 @@ const About = () => {
     <AboutStyled theme={theme} id="about" >
       <div className="about-info">
         <div className="about-image">
-          <img src={about} alt="abt-img" />
+          <img src={way} alt="abt-img" />
         </div>
         <div className="about-content">
           <Title name="About Me" />
           <p>
-            My name is Chinnarut Tamprateep. I was digital marketing and was working in insurance business for over 17 years. Currently I am doing small online business with healthy products on shelf. 
+            My name is Chinnarut Tamprateep. I am digital marketing and was working in insurance business for over 17 years. Currently I am doing small online business with healthy products on shelf. 
             <br /> <br />
             I am passionate in coding and programming language, so I designed to be self-taught in coding for 2.5 years. However, even I do not have any experiences in software or application business, I also have experienced in building project which can be define my expertise in programming area.
           </p>
@@ -119,6 +123,17 @@ const About = () => {
           <div className="button-container">
             <Button 
               name="087-693-2644"
+              icon={mobile}
+              blob="blob"
+              bg={theme.colorPrimary}
+              color={theme.colorWhite}
+              bFw={'600'}
+              onClick="onClick"
+              bRad={'30px'}
+              bPad={theme.bPad1}
+            />
+            <Button 
+              name="chinnarut.t@gmail.com"
               icon={email}
               blob="blob"
               bg={theme.colorPrimary}

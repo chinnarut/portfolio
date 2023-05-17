@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { useTheme } from '../../context/themeContext';
 import Button from '../Button/Button';
-import avatar from "../../img/avatar.png"
+import way from "../../img/chinnarut.png"
 import line from "../../img/line.png";
 import Particle from '../Particle';
 import { mobile } from '../../utils/Icons';
@@ -128,7 +128,8 @@ const HeaderStyled = styled.header`
     }
 
     img {
-      width: 700px;
+      width: 900px;
+      height: 700px;
       filter: grayscale(100%) drop-shadow(5px -5px 20px rgba(0, 0, 0, 0.65));
     }
   }
@@ -175,7 +176,6 @@ const Header = ({toggle, setToggle}) => {
       </div>
       <div className="left-header">
         <div className="left-h-content">
-          <h2>Hello, </h2>
           <h1>I am Chinnarut<span>.</span></h1>
           <p className="profession">Full-Stack Developer</p>
           <p className="description">
@@ -198,7 +198,7 @@ const Header = ({toggle, setToggle}) => {
 
       <div className="right-header"></div>
       <div className="image-container">
-        <img src={avatar} alt="avatar" />
+        <img src={way} alt="avatar" />
       </div>
       <div className="image-overlay"></div>
       <img src={line} alt="" className="image-line" />

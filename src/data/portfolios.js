@@ -50,6 +50,16 @@ export const portfolios = [
     {
         id: uuid(),
         category: "Web Design",
+        title: "My Portfolio",
+        image: gpt3,
+        link1: "",
+        link2: "https://chinnarut-porfoliot-web.vercel.app/",
+        icon1: git,
+        icon2: eye,
+    },
+    {
+        id: uuid(),
+        category: "Web Design",
         title: "GPT3 AI Web Design",
         image: gpt3,
         link1: "https://github.com/chinnarut/gpt-ui-design",
