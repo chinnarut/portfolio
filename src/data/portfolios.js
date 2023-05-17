@@ -5,6 +5,7 @@ import music from '../img/portImages/music.png';
 import airdnd from "../img/portImages/airdnd.png";
 import chatapp from "../img/portImages/chat-app.png";
 import cryptoQ from "../img/portImages/cryptoQ.png";
+import portfolio from "../img/portImages/portfolio.png";
 
 export const portfolios = [
     {
@@ -51,7 +52,7 @@ export const portfolios = [
         id: uuid(),
         category: "Web Design",
         title: "My Portfolio",
-        image: gpt3,
+        image: portfolio,
         link1: "",
         link2: "https://chinnarut-porfoliot-web.vercel.app/",
         icon1: git,
